@@ -50,7 +50,7 @@ class MainTheme {
             marginBottom: 40,
         },
         h5: {
-            color: this.palette.primary.main,
+            color: "#fff",
             textTransform: "uppercase",
             fontSize: "1.2rem",
         },

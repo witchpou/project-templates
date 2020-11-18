@@ -16,7 +16,7 @@ const MenuStyles = theme => (
     },
     listItem: {
         '&:hover': {
-            backgroundColor: "#f68313 !important",
+            backgroundColor: theme.palette.secondary.main + " !important",
             color: "#ffffff !important"
         }
     },

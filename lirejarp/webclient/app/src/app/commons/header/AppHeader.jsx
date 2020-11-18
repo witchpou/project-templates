@@ -32,7 +32,7 @@ class AppHeader extends Component {
                     <Typography className={classes.menuLogoResponsive} color="inherit" noWrap>
                         {<img className={classes.menuLogoImg} src={logoResponsive} alt="logo"/>}
                     </Typography>
-                    <Typography className={classes.menuTitle} variant="h5" color="primary" noWrap>
+                    <Typography className={classes.menuTitle} variant="h5" noWrap>
                         {/* <img src={logo} alt="logo" width="300px" /> */}
                         {title}
                     </Typography>

@@ -3,8 +3,8 @@
   "title": "lirejarp",
   "description": "LireJarp@Spring - master template",
   "packagePrefix": "xyz",
-  "branch": "master",
-  "credentialsRequired": true,
+  "branch": "JavaSpringBoot",
+  "credentialsRequired": false,
   "codeTemplates": [
     {
       "fileNameSuffix": ".java",
