@@ -1,0 +1,340 @@
+{
+  "location": "https://github.com/starwit/project-templates.git",
+  "title": "lirejarp",
+  "description": "LireJarp@Spring - master template",
+  "packagePrefix": "xyz",
+  "branch": "master",
+  "credentialsRequired": true,
+  "codeTemplates": [
+    {
+      "fileNameSuffix": ".java",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/persistence/Entity.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/persistence/src/main/java/de/${project.packagePrefix?lower_case}/persistence/entity/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 1,
+        "name": "ENTITY"
+      }
+    },
+    {
+      "fileNameSuffix": "application.properties",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/application/properties.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/application/src/main/resources/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": true,
+      "type": "GLOBAL",
+      "category": {
+        "id": 1,
+        "name": "ENTITY"
+      }
+    },
+    {
+      "fileNameSuffix": "Makefile",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/buildScripts/Makefile.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": false,
+      "type": "GLOBAL",
+      "category": {
+        "id": 1,
+        "name": "ENTITY"
+      }
+    },
+    {
+      "fileNameSuffix": "Repository.java",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/persistence/EntityRepository.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/persistence/src/main/java/de/${project.packagePrefix?lower_case}/persistence/repository/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 1,
+        "name": "ENTITY"
+      }
+    },
+    {
+      "fileNameSuffix": "RepositoryTest.java",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/persistence/EntityRepositoryTest.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/persistence/src/test/java/de/${project.packagePrefix?lower_case}/persistence/repository/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 1,
+        "name": "ENTITY"
+      }
+    },
+    {
+      "fileNameSuffix": "V1_0__init.sql",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/flyway/V1_0__init.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/persistence/src/main/resources/db/migration/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": false,
+      "type": "GLOBAL",
+      "category": {
+        "id": 1,
+        "name": "ENTITY"
+      }
+    },
+    {
+      "fileNameSuffix": "version_up.sh",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/buildScripts/version_up.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/buildScripts/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": false,
+      "type": "GLOBAL",
+      "category": {
+        "id": 1,
+        "name": "ENTITY"
+      }
+    },
+    {
+      "fileNameSuffix": "Service.java",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/service/Service.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/service/src/main/java/de/${project.packagePrefix?lower_case}/service/impl/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 2,
+        "name": "SERVICE"
+      }
+    },
+    {
+      "fileNameSuffix": "ServiceTest.java",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/service/ServiceTest.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/service/src/test/java/de/${project.packagePrefix?lower_case}/service/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 2,
+        "name": "SERVICE"
+      }
+    },
+    {
+      "fileNameSuffix": "Controller.java",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/rest/Controller.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/rest/src/main/java/de/${project.packagePrefix?lower_case}/rest/controller/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 3,
+        "name": "REST"
+      }
+    },
+    {
+      "fileNameSuffix": "ControllerTest.java",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/rest/ControllerTest.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/rest/src/test/java/de/${project.packagePrefix?lower_case}/rest/controller/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 3,
+        "name": "REST"
+      }
+    },
+    {
+      "fileNameSuffix": ".jsx",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/Model.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/app/model/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "All.jsx",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/EntityAllComponent.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/app/pages/${domain.name?lower_case}/all/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "App.jsx",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/App.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/app/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": false,
+      "type": "GLOBAL",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "AppNavigationMenu.jsx",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/NavbarContentProvider.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/app/contentProvider/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": false,
+      "type": "GLOBAL",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "index.html",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/index.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/public/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": true,
+      "type": "GLOBAL",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "Main.jsx",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/EntityMainComponent.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/app/pages/${domain.name?lower_case}/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "MainContentRouter.jsx",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/MainContentRouter.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/app/pages/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": false,
+      "type": "GLOBAL",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "Rest.js",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/EntityRest.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/app/services/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "Single.jsx",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/EntitySingleComponent.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/app/pages/${domain.name?lower_case}/single/",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": true,
+      "lowerCase": false,
+      "type": "DOMAIN",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "translations-de-DE.json",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/translation.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/localization",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": false,
+      "type": "ADDITIONAL_CONTENT",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    },
+    {
+      "fileNameSuffix": "translations-en-US.json",
+      "templatePath": "${projecthome}/${project.targetPath}/generator-templates/webclient/translation.ftl",
+      "concreteTemplatePath": "",
+      "targetPath": "${projecthome}/${project.targetPath}/${project.title}/webclient/app/src/localization",
+      "concreteTargetPath": "",
+      "createDomainDir": false,
+      "upperCaseFirst": false,
+      "lowerCase": false,
+      "type": "ADDITIONAL_CONTENT",
+      "category": {
+        "id": 4,
+        "name": "FRONTEND"
+      }
+    }
+  ]
+}
