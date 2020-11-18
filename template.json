@@ -1,7 +1,7 @@
 {
   "location": "https://github.com/starwit/project-templates.git",
   "title": "lirejarp",
-  "description": "LireJarp@Spring - master template",
+  "description": "LireJarp@Spring - github master template",
   "packagePrefix": "xyz",
   "branch": "JavaSpringBoot",
   "credentialsRequired": false,
