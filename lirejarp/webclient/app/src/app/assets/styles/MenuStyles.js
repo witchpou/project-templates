@@ -7,6 +7,7 @@ const MenuStyles = theme => (
     },
     appBar: {
         zIndex: theme.zIndex.modal + 1,
+        backgroundColor: theme.palette.primary.main,
     },
     drawer: {
         [theme.breakpoints.up("sm")]: {
