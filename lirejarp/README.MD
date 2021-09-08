@@ -1,4 +1,4 @@
-# LireJarp Java-Spring backend
+# Default Spring Boot + React Template
 This repository contains a template for a java spring boot backend and a React frontend
 
 ## Contact
