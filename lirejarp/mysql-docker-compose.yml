@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+services:
+  db:
+    image: mariadb:latest
+    restart: on-failure
+    environment:
+      MYSQL_DATABASE: 'lirejarp'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'lirejarp'
+      # You can use whatever password you like
+      MYSQL_PASSWORD: 'lirejarp'
+      # Password for root access
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3306:3306'
+    healthcheck:
+      test: ["CMD", "mysql" ,"-h", "localhost", "-P", "3306", "-u", "root", "-e", "select 1", "lirejarp"]
+      interval: 5s
+      timeout: 60s
+      retries: 30
+    expose:
+      # Opens port 3306 on the container
+      - '3306'
+    # Where our data will be persisted
+    volumes:
+      - db-data:/var/lib/mysql
+    networks: # Networks to join (Services on the same network can communicate with each other using their name)
+      - backend
+volumes:
+  db-data:
+ # Networks to be created to facilitate communication between containers
+networks:
+  backend:
