@@ -3,7 +3,7 @@
   "title": "lirejarp",
   "description": "LireJarp@Spring - github master template",
   "packagePrefix": "xyz",
-  "branch": "JavaSpringBoot",
+  "branch": "main",
   "credentialsRequired": false,
   "codeTemplates": [
     {
