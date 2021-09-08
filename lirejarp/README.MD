@@ -1,10 +1,17 @@
-# Default Spring Boot + React Template
-This repository contains a template for a java spring boot backend and a React frontend
+This repository contains a template for a java spring boot backend and a React frontend.
 
 ## Contact
 
 denjoo@oss.volkswagen.com (backend)
 ipdramon@oss.volkswagen.com (frontend)
+
+## Used Technologies
+
+* Spring Boot
+* React
+* Java 14 or higher
+* Maven 3
+* MariaDB / MySQL
 
 ## Structure
 
