@@ -7,6 +7,7 @@ denjoo@oss.volkswagen.com (backend)
 ipdramon@oss.volkswagen.com (frontend)
 
 ## Structure
+
 The project is structured into five submodules:
 * **application**
 * **rest**
@@ -14,33 +15,39 @@ The project is structured into five submodules:
 * **persistence**
 * **webclient**
 
-Preface
-```
+## Preface
+
 1. Search your project for TODOs (e.g. 'grep -rni "TODO" .' in this projects root folder ). There will be some locations you have to change
-
 2. Install NodeJS (if not already done)
-
-3. Run npm install in webclient/app
+3. Run `npm install` in webclient/app
 This will download the dependencies listed in package.json
+4. Ensure, that database (mariaDB/MySQL) and user is created:
+```sql
+CREATE DATABASE lirejarp;
+CREATE USER 'lirejarp'@'%' IDENTIFIED BY 'erik';
+grant all ON lirejarp.* TO 'erik'@'localhost';
 ```
+
+## Build
 
 Build spring backend
-```
-cd lirejarp-spring
+```bash
 mvn clean package
 ```
 
 Build spring backend + React frontend
-```
-cd lirejarp-spring
-mvn clean package -Pfrontend
+```bash
+mvn clean package -P frontend
 ```
 
+## Run
+
 Run example application.
-```
+```bash
 cd application
 java -jar target/application-<version>.dev.jar 
 ```
+Your application is reachable under http://localhost:8080/lirejarp
 
 Test simple rest call.
 ```
@@ -53,8 +60,8 @@ curl -X GET -H 'Content-Type: application/json' -i http://localhost:8080/lirejar
 curl -X GET -H 'Content-Type: application/json' -i http://localhost:8080/lirejarp/api/health/log
 curl -X GET -H 'Content-Type: application/json' -i http://localhost:8080/lirejarp/api/devices
 ```
+## Development & Debugging
 
-Test embedded H2 DB.
-```
-http://localhost:8080/lirejarp/h2
-```
+* you can start the application by running main class `application/Application.java` in your IDE
+* to enable fast changes to frontend, you can run `npm start` in webclient/app directory
+
