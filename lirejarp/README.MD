@@ -25,15 +25,22 @@ The project is structured into five submodules:
 ## Preface
 
 1. Search your project for TODOs (e.g. 'grep -rni "TODO" .' in this projects root folder ). There will be some locations you have to change
-2. Install NodeJS (if not already done)
+2. Install or update NodeJS (if not already done)
+  ```bash
+  # Node JS UPDATE
+  npm cache clean -f
+  sudo npm install -g n
+  sudo n stable
+  sudo n latest
+  ```
 3. Run `npm install` in webclient/app
 This will download the dependencies listed in package.json
 4. Ensure, that database (mariaDB/MySQL) and user is created:
-```sql
-CREATE DATABASE lirejarp;
-CREATE USER 'lirejarp'@'%' IDENTIFIED BY 'erik';
-grant all ON lirejarp.* TO 'erik'@'localhost';
-```
+  ```sql
+  CREATE DATABASE lirejarp;
+  CREATE USER 'lirejarp'@'%' IDENTIFIED BY 'erik';
+  grant all ON lirejarp.* TO 'erik'@'localhost';
+  ```
 
 ## Build
 
