@@ -1,6 +1,6 @@
-package de.${project.packagePrefix?lower_case}.persistence.repository;
+package de.${app.packagePrefix?lower_case}.persistence.repository;
 
-import de.${project.packagePrefix?lower_case}.persistence.entity.${domain.name};
+import de.${app.packagePrefix?lower_case}.persistence.entity.${domain.name};
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

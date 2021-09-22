@@ -1,6 +1,6 @@
 spring.profiles.active=@spring.profiles.active@
 spring.banner.location=classpath:banner.txt
-server.servlet.context-path=/${project.title?lower_case}
+server.servlet.context-path=/${app.title?lower_case}
 rest.base-path=/api
 
 # actuator
@@ -13,11 +13,11 @@ management.info.git.mode=full
 # MySQL
 spring.datasource.hikari.connection-timeout=10000
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3306/${project.title?lower_case}?useLegacyDatetimeCode=false&serverTimezone=CET
-spring.jpa.hibernate.naming.physical-strategy=de.${project.packagePrefix?lower_case}.persistence.config.UpperSnakeCasePhysicalNamingStrategy
+spring.datasource.url=jdbc:mysql://localhost:3306/${app.title?lower_case}?useLegacyDatetimeCode=false&serverTimezone=CET
+spring.jpa.hibernate.naming.physical-strategy=de.${app.packagePrefix?lower_case}.persistence.config.UpperSnakeCasePhysicalNamingStrategy
 #spring.jpa.hibernate.ddl-auto=create
-spring.datasource.username=${project.title?lower_case}
-spring.datasource.password=${project.title?lower_case}
+spring.datasource.username=${app.title?lower_case}
+spring.datasource.password=${app.title?lower_case}
 
 # Flyway
 spring.flyway.user=${r"${spring.datasource.username}"}
