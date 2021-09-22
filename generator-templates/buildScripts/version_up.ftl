@@ -2,7 +2,7 @@
 
 pattern_release='^[0-9]+\.[0-9]+\.[0-9]+$'
 pattern_dev='^[0-9]+\.[0-9]+\.[0-9]+\.dev$'
-helm_chart_dir=helm/${project.title?lower_case}
+helm_chart_dir=helm/${app.title?lower_case}
 
 function log {
   echo "[$(date --rfc-3339=seconds)]: $*"
@@ -41,9 +41,9 @@ fi
 
 log "Checking current version..."
 pattern_current_version="${r"${RELEASE_VERSION}"}.dev"
-current_version=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout 2> /dev/null)
+current_version=$(mvn help:evaluate -Dexpression=app.version -q -DforceStdout 2> /dev/null)
 if [[ $current_version != $pattern_current_version ]]; then
-  log "Current version $current_version does not match $pattern_current_version! Something is definitely wrong with your project configuration. Please fix manually!"
+  log "Current version $current_version does not match $pattern_current_version! Something is definitely wrong with your app configuration. Please fix manually!"
   check_failed=true
 fi
 
@@ -55,8 +55,8 @@ fi
 ## Replace dev version number (x.x.x.dev) with RELEASE_VERSION (e.g. in pom.xml)
 log "Current version is $current_version"
 
-# Current project version is valid, so set it to RELEASE_VERSION
-log "Setting project version to $RELEASE_VERSION"
+# Current app version is valid, so set it to RELEASE_VERSION
+log "Setting app version to $RELEASE_VERSION"
 if ! mvn versions:set -DnewVersion=$RELEASE_VERSION -q ; then
   log "Version change failed!"
   exit 1
@@ -66,7 +66,7 @@ log "Checking current Helm chart version..."
 pattern_current_helm_version="${r"${RELEASE_VERSION}"}-dev"
 current_helm_version=$(yq read ${r"${helm_chart_dir}"}/Chart.yaml version)
 if [[ $current_helm_version != $pattern_current_helm_version ]]; then
-  log "Current Helm chart version $current_helm_version does not match $pattern_current_helm_version! Something is definitely wrong with your project configuration. Please fix manually!"
+  log "Current Helm chart version $current_helm_version does not match $pattern_current_helm_version! Something is definitely wrong with your app configuration. Please fix manually!"
   check_failed=true
 fi
 
@@ -77,7 +77,7 @@ fi
 
 log "Current Helm chart version is $current_helm_version"
 
-# Current project version is valid, so set it to RELEASE_VERSION
+# Current app version is valid, so set it to RELEASE_VERSION
 log "Setting Helm chart version to $RELEASE_VERSION"
 if ! yq write -i ${r"${helm_chart_dir}"}/Chart.yaml version $RELEASE_VERSION ; then
   log "Helm chart version change failed!"
@@ -106,7 +106,7 @@ if [ $? -ne 0 ]; then
 fi
 
 ## Replace RELEASE_VERSION with NEXT_VERSION
-log "Setting project version to ${r"${NEXT_VERSION}"}.dev"
+log "Setting app version to ${r"${NEXT_VERSION}"}.dev"
 if ! mvn versions:set -DnewVersion=${r"${NEXT_VERSION}"}.dev -q ; then
   log "Version change failed!"
   exit 1

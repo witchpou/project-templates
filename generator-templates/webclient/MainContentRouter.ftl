@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 // Page Components
 import Home from "./home/HomeMain";
-<#list project.selectedDomains as domain>
+<#list app.selectedDomains as domain>
 import ${domain.name}Main from "./${domain.name?lower_case}/${domain.name}Main";
 </#list>
 
@@ -20,7 +20,7 @@ class MainContentRouter extends Component {
             <main className={classes.content}>
                 <div className={classes.toolbar} />
                 <Switch>
-                    <#list project.selectedDomains as domain>
+                    <#list app.selectedDomains as domain>
                     <Route
                         path="/${domain.name?lower_case}"
                         component={${domain.name}Main}/>

@@ -11,7 +11,7 @@
     <groupId>de.lirejarp</groupId>
     <artifactId>lirejarp</artifactId>
     <version>0.0.1.dev</version>
-    <description>Project template from lirejarp @ spring</description>
+    <description>App template from lirejarp @ spring</description>
     <packaging>pom</packaging>
 
     <properties>

@@ -15,7 +15,7 @@ ipdramon@oss.volkswagen.com (frontend)
 
 ## Structure
 
-The project is structured into five submodules:
+The app is structured into five submodules:
 * **application**
 * **rest**
 * **service**
@@ -24,7 +24,7 @@ The project is structured into five submodules:
 
 ## Preface
 
-1. Search your project for TODOs (e.g. 'grep -rni "TODO" .' in this projects root folder ). There will be some locations you have to change
+1. Search your app for TODOs (e.g. 'grep -rni "TODO" .' in this apps root folder ). There will be some locations you have to change
 2. Install or update NodeJS (if not already done). You can use [NodeJS Version Management Tool](https://github.com/tj/n) and command ´n´ for doing that:
   ```bash
   # Node JS UPDATE

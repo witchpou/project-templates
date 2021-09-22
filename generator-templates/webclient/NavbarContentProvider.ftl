@@ -20,7 +20,7 @@ class AppNavigationMenu extends Component {
         const { t } = this.props;
         let navListHome = { type: "Link", elements: [{ component: Link, to: "/", id: "0", title: t('home.title') }] };
         let navListEntitiesSection = { type: "Link", elements: [
-            <#list project.selectedDomains as domain>
+            <#list app.selectedDomains as domain>
             { component: Link, title: t('${domain.name?uncap_first}.title'), to: '/${domain.name?lower_case}', id: '${domain.name?uncap_first}' }<#sep>,</#sep>
             </#list>
         ]};

@@ -1,6 +1,6 @@
-package de.${project.packagePrefix?lower_case}.persistence.repository;
+package de.${app.packagePrefix?lower_case}.persistence.repository;
 
-import de.${project.packagePrefix?lower_case}.persistence.entity.${domain.name};
+import de.${app.packagePrefix?lower_case}.persistence.entity.${domain.name};
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
