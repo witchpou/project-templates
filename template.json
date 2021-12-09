@@ -1,10 +1,4 @@
 {
-  "location": "https://github.com/starwit/app-templates.git",
-  "title": "lirejarp",
-  "description": "LireJarp@Spring - github master template",
-  "packagePrefix": "xyz",
-  "branch": "main",
-  "credentialsRequired": false,
   "codeTemplates": [
     {
       "fileNameSuffix": ".java",
