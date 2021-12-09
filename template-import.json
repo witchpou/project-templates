@@ -1,34 +1,16 @@
 {
   "codeTemplates": [
     {
-      "fileNameSuffix": ".java",
-      "templatePath": "${apphome}/${app.targetPath}/generator-templates/persistence/Entity.ftl",
-      "concreteTemplatePath": "",
-      "targetPath": "${apphome}/${app.targetPath}/${app.title}/persistence/src/main/java/de/${app.packagePrefix?lower_case}/persistence/entity/",
-      "concreteTargetPath": "",
-      "createDomainDir": false,
-      "upperCaseFirst": true,
-      "lowerCase": false,
-      "type": "DOMAIN",
-      "category": {
-        "id": 1,
-        "name": "ENTITY"
-      }
+      "fileName": "${entity.name}.java",
+      "templatePath": "persistence/Entity.ftl",
+      "targetPath": "persistence/src/main/java/de/${app.packagePrefix?lower_case}/persistence/entity/",
+      "category": "ENTITY"
     },
     {
-      "fileNameSuffix": "application.properties",
-      "templatePath": "${apphome}/${app.targetPath}/generator-templates/application/properties.ftl",
-      "concreteTemplatePath": "",
-      "targetPath": "${apphome}/${app.targetPath}/${app.title}/application/src/main/resources/",
-      "concreteTargetPath": "",
-      "createDomainDir": false,
-      "upperCaseFirst": false,
-      "lowerCase": true,
-      "type": "GLOBAL",
-      "category": {
-        "id": 1,
-        "name": "ENTITY"
-      }
+      "fileName": "application.properties",
+      "templatePath": "application/properties.ftl",
+      "targetPath": "application/src/main/resources/",
+      "category": "ENTITY"
     },
     {
       "fileNameSuffix": "Makefile",
