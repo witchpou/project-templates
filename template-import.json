@@ -9,6 +9,7 @@
     {
       "fileName": "application.properties",
       "templatePath": "application/properties.ftl",
+      "insert": false,
       "targetPath": "application/src/main/resources/",
       "category": "ENTITY"
     },
