@@ -1,5 +1,7 @@
 {
-  "codeTemplates": [
+  "templatename": "lirejarp",
+  "packagePlaceholder": "xyz",
+  "templateFiles": [
     {
       "fileName": "${entity.name}.java",
       "templatePath": "persistence/Entity.ftl",
