@@ -4,6 +4,7 @@
   "templateFiles": [
     {
       "fileName": "${domain.name}.java",
+      "someprop": "some stuff",
       "templatePath": "persistence/Entity.ftl",
       "targetPath": "persistence/src/main/java/de/${app.packagePrefix?lower_case}/persistence/entity/",
       "category": "ENTITY"
