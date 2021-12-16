@@ -3,18 +3,24 @@
   "packagePlaceholder": "xyz",
   "templateFiles": [
     {
-      "fileName": "${domain.name}.java",
+      "fileName": "${domain.name}Entity.java",
       "someprop": "some stuff",
       "templatePath": "persistence/Entity.ftl",
       "targetPath": "persistence/src/main/java/de/${app.packagePrefix?lower_case}/persistence/entity/",
       "category": "ENTITY"
     },
     {
+      "fileName": "${domain.name}Serivce.java",
+      "someprop": "some stuff",
+      "templatePath": "persistence/Service.ftl",
+      "targetPath": "persistence/src/main/java/de/${app.packagePrefix?lower_case}/persistence/service/",
+      "category": "SERVICE"
+    },    
+    {
       "fileName": "application.properties",
-      "append": true,
       "templatePath": "application/properties.ftl",
       "targetPath": "application/src/main/resources/",
-      "category": "ENTITY"
+      "category": "GLOBAL"
     }
   ]
 }
