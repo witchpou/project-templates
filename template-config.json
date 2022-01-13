@@ -12,7 +12,7 @@
     {
       "fileName": "${domain.name}Serivce.java",
       "someprop": "some stuff",
-      "templatePath": "persistence/Service.ftl",
+      "templatePath": "service/Service.ftl",
       "targetPath": "persistence/src/main/java/de/${app.packagePrefix?lower_case}/persistence/service/",
       "category": "SERVICE"
     },    
