@@ -137,7 +137,6 @@
       "targetPath": "webclient/app/src/localization",
       "append": true,
       "category": "FRONTEND"
-    },
     }
   ]
 }
