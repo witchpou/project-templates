@@ -20,7 +20,7 @@ class MainContentRouter extends Component {
             <main className={classes.content}>
                 <div className={classes.toolbar} />
                 <Switch>
-                    <#list app.selectedDomains as domain>
+                    <#list app.domains as domain>
                     <Route
                         path="/${domain.name?lower_case}"
                         component={${domain.name}Main}/>
