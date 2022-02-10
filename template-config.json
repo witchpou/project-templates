@@ -17,7 +17,7 @@
     {
       "fileName": "Makefile",
       "templatePath": "buildScripts/Makefile.ftl",
-      "targetPath": "",
+      "targetPath": "/",
       "category": "ENTITY"
     },
     {
