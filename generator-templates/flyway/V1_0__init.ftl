@@ -1,4 +1,4 @@
-<#list app.selectedDomains as domain>
+<#list app.domains as domain>
 CREATE TABLE IF NOT EXISTS `${domain.name?upper_case}`
 (
     `ID`      bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
