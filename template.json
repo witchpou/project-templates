@@ -1,6 +1,6 @@
 {
   "location": "https://github.com/starwit/project-templates.git",
-  "title": "lirejarp",
+  "title": "react-java-mysql",
   "description": "LireJarp@Spring - github master template",
   "packagePrefix": "xyz",
   "branch": "main",
