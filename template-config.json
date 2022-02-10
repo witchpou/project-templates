@@ -94,7 +94,7 @@
     },
     {
       "fileName": "index.html",
-      "templatePath": "generator-templates/webclient/index.ftl",
+      "templatePath": "webclient/index.ftl",
       "targetPath": "webclient/app/public/",
       "category": "FRONTEND"
     },
