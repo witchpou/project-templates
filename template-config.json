@@ -85,21 +85,18 @@
       "fileName": "App.jsx",
       "templatePath": "generator-templates/webclient/App.ftl",
       "targetPath": "webclient/app/src/app/",
-      "append": true,
       "category": "FRONTEND"
     },
     {
       "fileName": "AppNavigationMenu.jsx",
       "templatePath": "generator-templates/webclient/NavbarContentProvider.ftl",
       "targetPath": "webclient/app/src/app/contentProvider/",
-      "append": true,
       "category": "FRONTEND"
     },
     {
       "fileName": "index.html",
       "templatePath": "generator-templates/webclient/index.ftl",
       "targetPath": "webclient/app/public/",
-      "append": true,
       "category": "FRONTEND"
       }
     },
