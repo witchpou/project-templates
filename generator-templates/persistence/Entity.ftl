@@ -13,7 +13,7 @@ ${import}
  */
 @Entity
 @Table(name = "${domain.name?upper_case}")
-public class ${domain.name} extends AbstractEntity<Long> {
+public class ${domain.name}Entity extends AbstractEntity<Long> {
 
 //domain attributes
 	<#list (domain.getAttributes()) as attribute> 
