@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 // Page Components
 import Home from "./home/HomeMain";
-<#list app.selectedDomains as domain>
+<#list app.domains as domain>
 import ${domain.name}Main from "./${domain.name?lower_case}/${domain.name}Main";
 </#list>
 
