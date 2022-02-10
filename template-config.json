@@ -122,108 +122,49 @@
     },
     {
       "fileName": "index.html",
-      "templatePath": "${apphome}/${app.targetPath}/generator-templates/webclient/index.ftl",
-      "concreteTemplatePath": "",
-      "targetPath": "${apphome}/${app.targetPath}/${app.title}/webclient/app/public/",
-      "concreteTargetPath": "",
-      "createDomainDir": false,
-      "upperCaseFirst": false,
-      "lowerCase": true,
-      "type": "GLOBAL",
-      "category": {
-        "id": 4,
-        "name": "FRONTEND"
+      "templatePath": "generator-templates/webclient/index.ftl",
+      "targetPath": "webclient/app/public/",
+      "category": "FRONTEND"
       }
     },
     {
-      "fileName": "Main.jsx",
-      "templatePath": "${apphome}/${app.targetPath}/generator-templates/webclient/EntityMainComponent.ftl",
-      "concreteTemplatePath": "",
-      "targetPath": "${apphome}/${app.targetPath}/${app.title}/webclient/app/src/app/pages/${domain.name?lower_case}/",
-      "concreteTargetPath": "",
-      "createDomainDir": false,
-      "upperCaseFirst": false,
-      "lowerCase": false,
-      "type": "DOMAIN",
-      "category": {
-        "id": 4,
-        "name": "FRONTEND"
-      }
+      "fileName": "${domain.name}Main.jsx",
+      "templatePath": "generator-templates/webclient/EntityMainComponent.ftl",
+      "targetPath": "webclient/app/src/app/pages/${domain.name?lower_case}/",
+      "category": "FRONTEND"
     },
     {
       "fileName": "MainContentRouter.jsx",
-      "templatePath": "${apphome}/${app.targetPath}/generator-templates/webclient/MainContentRouter.ftl",
-      "concreteTemplatePath": "",
-      "targetPath": "${apphome}/${app.targetPath}/${app.title}/webclient/app/src/app/pages/",
-      "concreteTargetPath": "",
-      "createDomainDir": false,
-      "upperCaseFirst": false,
-      "lowerCase": false,
-      "type": "GLOBAL",
-      "category": {
-        "id": 4,
-        "name": "FRONTEND"
-      }
+      "templatePath": "generator-templates/webclient/MainContentRouter.ftl",
+      "targetPath": "webclient/app/src/app/pages/",
+      "category": "FRONTEND"
     },
     {
-      "fileName": "Rest.js",
-      "templatePath": "${apphome}/${app.targetPath}/generator-templates/webclient/EntityRest.ftl",
-      "concreteTemplatePath": "",
-      "targetPath": "${apphome}/${app.targetPath}/${app.title}/webclient/app/src/app/services/",
-      "concreteTargetPath": "",
-      "createDomainDir": false,
-      "upperCaseFirst": true,
-      "lowerCase": false,
-      "type": "DOMAIN",
-      "category": {
-        "id": 4,
-        "name": "FRONTEND"
-      }
-    },
+      "fileName": "${domain.name}Rest.js",
+      "templatePath": "generator-templates/webclient/EntityRest.ftl",
+      "targetPath": "webclient/app/src/app/services/",
+      "category": "FRONTEND"
+     },
     {
-      "fileName": "Single.jsx",
-      "templatePath": "${apphome}/${app.targetPath}/generator-templates/webclient/EntitySingleComponent.ftl",
-      "concreteTemplatePath": "",
-      "targetPath": "${apphome}/${app.targetPath}/${app.title}/webclient/app/src/app/pages/${domain.name?lower_case}/single/",
-      "concreteTargetPath": "",
-      "createDomainDir": false,
-      "upperCaseFirst": true,
-      "lowerCase": false,
-      "type": "DOMAIN",
-      "category": {
-        "id": 4,
-        "name": "FRONTEND"
-      }
-    },
-    {
-      "fileName": "translations-de-DE.json",
-      "templatePath": "${apphome}/${app.targetPath}/generator-templates/webclient/translation.ftl",
-      "concreteTemplatePath": "",
-      "targetPath": "${apphome}/${app.targetPath}/${app.title}/webclient/app/src/localization",
-      "concreteTargetPath": "",
-      "createDomainDir": false,
-      "upperCaseFirst": false,
-      "lowerCase": false,
-      "type": "ADDITIONAL_CONTENT",
-      "category": {
-        "id": 4,
-        "name": "FRONTEND"
-      }
+      "fileName": "${domain.name}Single.jsx",
+      "templatePath": "generator-templates/webclient/EntitySingleComponent.ftl",
+      "targetPath": "webclient/app/src/app/pages/${domain.name?lower_case}/single/",
+      "category": "FRONTEND"
     },
     {
       "fileName": "translations-en-US.json",
-      "templatePath": "${apphome}/${app.targetPath}/generator-templates/webclient/translation.ftl",
-      "concreteTemplatePath": "",
-      "targetPath": "${apphome}/${app.targetPath}/${app.title}/webclient/app/src/localization",
-      "concreteTargetPath": "",
-      "createDomainDir": false,
-      "upperCaseFirst": false,
-      "lowerCase": false,
-      "type": "ADDITIONAL_CONTENT",
-      "category": {
-        "id": 4,
-        "name": "FRONTEND"
-      }
+      "templatePath": "generator-templates/webclient/translation.ftl",
+      "targetPath": "webclient/app/src/localization",
+      "append": true
+      "category": "FRONTEND"
+    },
+    {
+      "fileName": "translations-de-DE.json",
+      "templatePath": "generator-templates/webclient/translation.ftl",
+      "targetPath": "webclient/app/src/localization",
+      "append": true
+      "category": "FRONTEND"
+    },
     }
   ]
 }
