@@ -1,4 +1,4 @@
-<#list app.selectedDomains as domain>
+<#list app.domains as domain>
     "${domain.name?uncap_first}": "${domain.name}",
     "${domain.name?uncap_first}.title": "${domain.name}All",
     "${domain.name?uncap_first}.id": "id",
