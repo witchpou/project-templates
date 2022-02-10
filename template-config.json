@@ -97,7 +97,6 @@
       "templatePath": "generator-templates/webclient/index.ftl",
       "targetPath": "webclient/app/public/",
       "category": "FRONTEND"
-      }
     },
     {
       "fileName": "${domain.name}Main.jsx",
