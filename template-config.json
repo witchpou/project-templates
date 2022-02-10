@@ -4,33 +4,6 @@
   "templateFiles": [
     {
       "fileName": "${domain.name}Entity.java",
-      "someprop": "some stuff",
-      "templatePath": "persistence/Entity.ftl",
-      "targetPath": "persistence/src/main/java/de/${app.packagePrefix?lower_case}/persistence/entity/",
-      "category": "ENTITY"
-    },
-    {
-      "fileName": "${domain.name}Serivce.java",
-      "someprop": "some stuff",
-      "templatePath": "service/Service.ftl",
-      "targetPath": "service/src/main/java/de/${app.packagePrefix?lower_case}/service/",
-      "category": "SERVICE"
-    },    
-    {
-      "fileName": "application.properties",
-      "templatePath": "application/properties.ftl",
-      "targetPath": "application/src/main/resources/",
-      "category": "GLOBAL"
-    }
-  ]
-}
-
-{
-  "templateName": "lirejarp",
-  "packagePlaceholder": "xyz",
-  "templateFiles": [
-    {
-      "fileName": "${domain.name}Entity.java",
       "templatePath": "persistence/Entity.ftl",
       "targetPath": "persistence/src/main/java/de/${app.packagePrefix?lower_case}/persistence/entity/",
       "category": "ENTITY"
