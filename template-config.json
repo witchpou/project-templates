@@ -1,5 +1,5 @@
 {
-  "templateName": "react-java-mysql",
+  "templateName": "reactjavamysql",
   "packagePlaceholder": "xyz",
   "templateFiles": [
     {
@@ -17,7 +17,6 @@
     {
       "fileName": "Makefile",
       "templatePath": "buildScripts/Makefile.ftl",
-      "concreteTemplatePath": "",
       "targetPath": "",
       "category": "ENTITY"
     },
