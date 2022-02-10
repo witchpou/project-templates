@@ -34,61 +34,61 @@
     },
     {
       "fileName": "V1_0__init.sql",
-      "templatePath": "generator-templates/flyway/V1_0__init.ftl",
+      "templatePath": "flyway/V1_0__init.ftl",
       "targetPath": "persistence/src/main/resources/db/migration/",
       "category": "ENTITY"
     },
     {
       "fileName": "version_up.sh",
-      "templatePath": "generator-templates/buildScripts/version_up.ftl",
+      "templatePath": "buildScripts/version_up.ftl",
       "targetPath": "buildScripts/",
       "category": "ENTITY"
     },
     {
       "fileName": "${domain.name}Service.java",
-      "templatePath": "generator-templates/service/Service.ftl",
+      "templatePath": "service/Service.ftl",
       "targetPath": "service/src/main/java/de/${app.packagePrefix?lower_case}/service/impl/",
       "category": "ENTITY"
     },
     {
       "fileName": "${domain.name}ServiceTest.java",
-      "templatePath": "generator-templates/service/ServiceTest.ftl",
+      "templatePath": "service/ServiceTest.ftl",
       "targetPath": "service/src/test/java/de/${app.packagePrefix?lower_case}/service/",
       "category": "ENTITY"
     },
     {
       "fileName": "${domain.name}Controller.java",
-      "templatePath": "generator-templates/rest/Controller.ftl",
+      "templatePath": "rest/Controller.ftl",
       "targetPath": "rest/src/main/java/de/${app.packagePrefix?lower_case}/rest/controller/",
       "category": "REST"
     },
     {
       "fileName": "${domain.name}ControllerTest.java",
-      "templatePath": "generator-templates/rest/ControllerTest.ftl",
+      "templatePath": "rest/ControllerTest.ftl",
       "targetPath": "rest/src/test/java/de/${app.packagePrefix?lower_case}/rest/controller/",
       "category": "REST"
     },
     {
       "fileName": "${domain.name}.jsx",
-      "templatePath": "generator-templates/webclient/Model.ftl",
+      "templatePath": "webclient/Model.ftl",
       "targetPath": "webclient/app/src/app/model/",
       "category": "FRONTEND"
     },
     {
       "fileName": "${domain.name}All.jsx",
-      "templatePath": "generator-templates/webclient/EntityAllComponent.ftl",
+      "templatePath": "webclient/EntityAllComponent.ftl",
       "targetPath": "webclient/app/src/app/pages/${domain.name?lower_case}/all/",
       "category": "FRONTEND"
     },
     {
       "fileName": "App.jsx",
-      "templatePath": "generator-templates/webclient/App.ftl",
+      "templatePath": "webclient/App.ftl",
       "targetPath": "webclient/app/src/app/",
       "category": "FRONTEND"
     },
     {
       "fileName": "AppNavigationMenu.jsx",
-      "templatePath": "generator-templates/webclient/NavbarContentProvider.ftl",
+      "templatePath": "webclient/NavbarContentProvider.ftl",
       "targetPath": "webclient/app/src/app/contentProvider/",
       "category": "FRONTEND"
     },
@@ -100,38 +100,38 @@
     },
     {
       "fileName": "${domain.name}Main.jsx",
-      "templatePath": "generator-templates/webclient/EntityMainComponent.ftl",
+      "templatePath": "webclient/EntityMainComponent.ftl",
       "targetPath": "webclient/app/src/app/pages/${domain.name?lower_case}/",
       "category": "FRONTEND"
     },
     {
       "fileName": "MainContentRouter.jsx",
-      "templatePath": "generator-templates/webclient/MainContentRouter.ftl",
+      "templatePath": "webclient/MainContentRouter.ftl",
       "targetPath": "webclient/app/src/app/pages/",
       "category": "FRONTEND"
     },
     {
       "fileName": "${domain.name}Rest.js",
-      "templatePath": "generator-templates/webclient/EntityRest.ftl",
+      "templatePath": "webclient/EntityRest.ftl",
       "targetPath": "webclient/app/src/app/services/",
       "category": "FRONTEND"
      },
     {
       "fileName": "${domain.name}Single.jsx",
-      "templatePath": "generator-templates/webclient/EntitySingleComponent.ftl",
+      "templatePath": "webclient/EntitySingleComponent.ftl",
       "targetPath": "webclient/app/src/app/pages/${domain.name?lower_case}/single/",
       "category": "FRONTEND"
     },
     {
       "fileName": "translations-en-US.json",
-      "templatePath": "generator-templates/webclient/translation.ftl",
+      "templatePath": "webclient/translation.ftl",
       "targetPath": "webclient/app/src/localization",
       "append": true,
       "category": "FRONTEND"
     },
     {
       "fileName": "translations-de-DE.json",
-      "templatePath": "generator-templates/webclient/translation.ftl",
+      "templatePath": "webclient/translation.ftl",
       "targetPath": "webclient/app/src/localization",
       "append": true,
       "category": "FRONTEND"
