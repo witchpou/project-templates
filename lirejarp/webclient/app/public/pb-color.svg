@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="40.749172mm"
+   height="45.50172mm"
+   viewBox="0 0 40.749172 45.50172"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   sodipodi:docname="pb4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:lockguides="false"
+     inkscape:zoom="1.1462864"
+     inkscape:cx="-285.26902"
+     inkscape:cy="213.29748"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="-39.552449,-9.5839985"
+       orientation="1,0"
+       id="guide83"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="17.323342,-58.846808"
+       orientation="0,-1"
+       id="guide85"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="20.478809,33.332501"
+       orientation="1,0"
+       id="guide87"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="80.515403,-17.663068"
+       orientation="1,0"
+       id="guide103"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="40.607413,49.897011"
+       orientation="1,0"
+       id="guide245"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0.52916655,9.5068414"
+       orientation="1,0"
+       id="guide341"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-71.267974,-0.055618538"
+       orientation="0,-1"
+       id="guide343"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="23.157033,19.826771"
+       orientation="0,-1"
+       id="guide345"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="55.918913,-20.074948"
+       orientation="0,-1"
+       id="guide347"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-39.552447 : -20.074949 : 1"
+       inkscape:vp_y="0 : 999.99996 : 0"
+       inkscape:vp_z="80.515406 : -20.074949 : 1"
+       inkscape:persp3d-origin="25.538126 : -104.08619 : 1"
+       id="perspective53" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-79.461876,-54.457572)">
+    <g
+       sodipodi:type="inkscape:box3d"
+       id="g55"
+       style="fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+       inkscape:perspectiveID="#perspective53"
+       inkscape:corner0="0.62395088 : 0.15454082 : 0 : 1"
+       inkscape:corner7="0.084278037 : 0.1272758 : 0.53120062 : 1">
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path65"
+         style="fill:#ff7643;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="13"
+         d="M 79.991043,93.3927 99.940686,80.132526 119.68188,93.252981 99.70601,99.959294 Z"
+         points="99.940686,80.132526 119.68188,93.252981 99.70601,99.959294 79.991043,93.3927 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path63"
+         style="fill:#4baef3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="14"
+         d="M 99.940686,54.986744 V 80.132526 L 119.68188,93.252981 V 76.375619 Z"
+         points="99.940686,80.132526 119.68188,93.252981 119.68188,76.375619 99.940686,54.986744 "
+         transform="translate(0.52916663,-0.52916663)" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path61"
+         style="fill:#ffcf43;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="3"
+         d="M 79.991043,76.603388 99.940686,54.986744 V 80.132526 L 79.991043,93.3927 Z"
+         points="99.940686,54.986744 99.940686,80.132526 79.991043,93.3927 79.991043,76.603388 "
+         transform="translate(-0.52916663,-0.52916663)" />
+    </g>
+  </g>
+</svg>

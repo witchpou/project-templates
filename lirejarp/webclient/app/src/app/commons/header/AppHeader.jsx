@@ -8,8 +8,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 
-import logo from "../../assets/images/logo.png";
-import logoResponsive from "../../assets/images/logo.png";
+import logo from "../../assets/images/pb-white.png";
+import logoResponsive from "../../assets/images/pb-color.png";
 import MenuStyles from "../../assets/styles/MenuStyles";
 
 
