@@ -1,6 +1,6 @@
 package de.${app.packagePrefix?lower_case}.service.impl;
 
-import de.${app.packagePrefix?lower_case}.persistence.entity.${domain.name};
+import de.${app.packagePrefix?lower_case}.persistence.entity.${domain.name}Entity;
 import de.${app.packagePrefix?lower_case}.persistence.repository.${domain.name}Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +23,7 @@ public class ${domain.name}Service {
     /**
      * @return
      */
-    public List<${domain.name}> findAll() {
+    public List<${domain.name}Entity> findAll() {
         return this.${domain.name?lower_case}Repository.findAll();
     }
 
@@ -39,7 +39,7 @@ public class ${domain.name}Service {
      * @param ${domain.name?lower_case}
      * @return
      */
-    public ${domain.name} saveOrUpdate(${domain.name} ${domain.name?lower_case}) {
+    public ${domain.name} saveOrUpdate(${domain.name}Entity ${domain.name?lower_case}) {
         this.${domain.name?lower_case}Repository.save(${domain.name?lower_case});
         return ${domain.name?lower_case};
     }
@@ -47,7 +47,7 @@ public class ${domain.name}Service {
     /**
      * @param ${domain.name?lower_case}
      */
-    public void delete(${domain.name} ${domain.name?lower_case}) {
+    public void delete(${domain.name}Entity ${domain.name?lower_case}) {
         this.${domain.name?lower_case}Repository.delete(${domain.name?lower_case});
     }
 
