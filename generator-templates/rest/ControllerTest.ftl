@@ -1,7 +1,7 @@
 package de.${app.packagePrefix?lower_case}.rest.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.${app.packagePrefix?lower_case}.persistence.entity.${domain.name};
+import de.${app.packagePrefix?lower_case}.persistence.entity.${domain.name}Entity;
 import de.${app.packagePrefix?lower_case}.service.impl.${domain.name}Service;
 import org.junit.Test;
 import org.junit.runner.RunWith;
