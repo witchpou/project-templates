@@ -1,6 +1,6 @@
 package de.${app.packagePrefix?lower_case}.service;
 
-import de.${app.packagePrefix?lower_case}.persistence.entity.${domain.name};
+import de.${app.packagePrefix?lower_case}.persistence.entity.${domain.name}Entity;
 import de.${app.packagePrefix?lower_case}.persistence.repository.${domain.name}Repository;
 import de.${app.packagePrefix?lower_case}.service.impl.${domain.name}Service;
 import org.junit.Before;
