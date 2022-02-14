@@ -34,19 +34,19 @@ public class ${domain.name}Controller {
      */
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void save(@RequestBody ${domain.name}Entity ${domain.name?lower_case}) {
-        this.${domain.name?lower_case}Service.saveOrUpdate(${domain.name?lower_case});
+    public void save(@RequestBody ${domain.name}Entity ${domain.name?lower_case}Entity) {
+        this.${domain.name?lower_case}Service.saveOrUpdate(${domain.name?lower_case}Entity);
     }
 
     @PutMapping
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
-    public void update(@RequestBody ${domain.name}Entity ${domain.name?lower_case}) {
-        this.${domain.name?lower_case}Service.saveOrUpdate(${domain.name?lower_case});
+    public void update(@RequestBody ${domain.name}Entity ${domain.name?lower_case}Entity) {
+        this.${domain.name?lower_case}Service.saveOrUpdate(${domain.name?lower_case}Entity);
     }
 
     @DeleteMapping
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
-    public void delete(@RequestBody ${domain.name}Entity ${domain.name?lower_case}) {
-        this.${domain.name?lower_case}Service.delete(${domain.name?lower_case});
+    public void delete(@RequestBody ${domain.name}Entity ${domain.name?lower_case}Entity) {
+        this.${domain.name?lower_case}Service.delete(${domain.name?lower_case}Entity);
     }
 }
