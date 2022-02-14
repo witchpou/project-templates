@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration monitorInterval="60">
     <Properties>
-        <Property name="baseName">lirejarp</Property>
+        <Property name="baseName">react-spring</Property>
         <Property name="pattern">[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</Property>
     </Properties>
     <Appenders>
@@ -23,7 +23,7 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="de.lirejarp" level="debug" additivity="false">
+        <Logger name="de.react-spring" level="debug" additivity="false">
             <AppenderRef ref="ConsoleAppender"/>
             <AppenderRef ref="FileAppender"/>
         </Logger>

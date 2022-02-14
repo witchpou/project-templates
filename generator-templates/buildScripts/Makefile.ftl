@@ -17,7 +17,7 @@ guard-%:
 dev-maven: guard-BUILD_NUMBER
 dev-maven: VERSION := $(VERSION)$(BUILD_NUMBER)
 dev-maven: set-version
-dev-maven: lirejarp-deploy
+dev-maven: react-spring-deploy
 
 dev-docker: guard-BUILD_NUMBER
 dev-docker: VERSION := $(VERSION)$(BUILD_NUMBER)
@@ -30,7 +30,7 @@ dev-helm: helm-set-version
 dev-helm: helm-package
 dev-helm: helm-upload
 
-prod-maven: lirejarp-deploy
+prod-maven: react-spring-deploy
 
 prod-docker: docker-build
 prod-docker: docker-push
@@ -41,7 +41,7 @@ prod-helm: helm-upload
 set-version: 
 	mvn versions:set -DnewVersion=$(VERSION)
 
-lirejarp-deploy:
+react-spring-deploy:
 	npm install --prefix webclient/app
 	mvn clean deploy -Pfrontend
 

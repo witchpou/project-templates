@@ -37,9 +37,9 @@ The app is structured into five submodules:
 This will download the dependencies listed in package.json
 4. Ensure, that database (mariaDB/MySQL) and user is created:
   ```sql
-  CREATE DATABASE lirejarp;
-  CREATE USER 'lirejarp'@'%' IDENTIFIED BY 'erik';
-  grant all ON lirejarp.* TO 'erik'@'localhost';
+  CREATE DATABASE react-spring;
+  CREATE USER 'react-spring'@'%' IDENTIFIED BY 'erik';
+  grant all ON react-spring.* TO 'erik'@'localhost';
   ```
 
 ## Build
@@ -61,18 +61,18 @@ Run example application.
 cd application
 java -jar target/application-<version>.dev.jar 
 ```
-Your application is reachable under http://localhost:8080/lirejarp
+Your application is reachable under http://localhost:8080/react-spring
 
 Test simple rest call.
 ```
-http://localhost:8080/lirejarp/api/health
-http://localhost:8080/lirejarp/api/health/log
-http://localhost:8080/lirejarp/api/devices
+http://localhost:8080/react-spring/api/health
+http://localhost:8080/react-spring/api/health/log
+http://localhost:8080/react-spring/api/devices
 ```
 ```
-curl -X GET -H 'Content-Type: application/json' -i http://localhost:8080/lirejarp/api/health
-curl -X GET -H 'Content-Type: application/json' -i http://localhost:8080/lirejarp/api/health/log
-curl -X GET -H 'Content-Type: application/json' -i http://localhost:8080/lirejarp/api/devices
+curl -X GET -H 'Content-Type: application/json' -i http://localhost:8080/react-spring/api/health
+curl -X GET -H 'Content-Type: application/json' -i http://localhost:8080/react-spring/api/health/log
+curl -X GET -H 'Content-Type: application/json' -i http://localhost:8080/react-spring/api/devices
 ```
 ## Development & Debugging
 

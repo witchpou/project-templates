@@ -7,7 +7,7 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 /**
- * AbstractEntity as basis for all entities in Lirejarp-Spring projects
+ * AbstractEntity as basis for all entities in react-spring-Spring projects
  * @author denjoo@oss.volkswagen.com
  * @since 12.03.2019 10:30
  */

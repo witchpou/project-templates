@@ -8,10 +8,10 @@
         <version>2.1.3.RELEASE</version>
     </parent>
 
-    <groupId>de.lirejarp</groupId>
-    <artifactId>lirejarp</artifactId>
+    <groupId>de.react-spring</groupId>
+    <artifactId>react-spring</artifactId>
     <version>0.0.1.dev</version>
-    <description>App template from lirejarp @ spring</description>
+    <description>App template from react-spring @ spring</description>
     <packaging>pom</packaging>
 
     <properties>
