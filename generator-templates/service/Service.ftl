@@ -31,7 +31,7 @@ public class ${domain.name}Service {
      * @param id
      * @return
      */
-    public ${domain.name} findById(Long id) {
+    public ${domain.name}Entity findById(Long id) {
         return this.${domain.name?lower_case}Repository.findById(id).orElseThrow(() -> new EntityNotFoundException(String.valueOf(id)));
     }
 
@@ -39,7 +39,7 @@ public class ${domain.name}Service {
      * @param ${domain.name?lower_case}
      * @return
      */
-    public ${domain.name} saveOrUpdate(${domain.name}Entity ${domain.name?lower_case}) {
+    public ${domain.name}Entity saveOrUpdate(${domain.name}Entity ${domain.name?lower_case}) {
         this.${domain.name?lower_case}Repository.save(${domain.name?lower_case});
         return ${domain.name?lower_case};
     }
