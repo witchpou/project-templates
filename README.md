@@ -4,3 +4,7 @@ Repository for app templates used in [LjProjectBuilder](https://github.com/starw
 
 Available templates:
 * [Spring Boot + React Application Template](react-spring)
+
+Theme Helpers:
+* [Material UI Theme Creator](https://bareynol.github.io/mui-theme-creator/#Typography)
+* [Color Palettes](https://coolors.co/)
