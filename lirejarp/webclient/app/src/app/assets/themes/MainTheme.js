@@ -1,12 +1,21 @@
 class MainTheme {
     palette = {
-        primary: {
-            main: "#009900",
-            contrastText: "#fff"
-        },
-        secondary: {
-            main: "#33cc33"
-        },
+    type: 'light',
+    primary: {
+      main: '#0072bb',
+    },
+    secondary: {
+      main: '#d81159',
+    },
+    info: {
+      main: '#2196f3',
+    },
+    error: {
+      main: '#D81159',
+    },
+    warning: {
+      main: '#FFBC42',
+    },
         background: {
             main: "#bdc1c7"
         },
@@ -82,7 +91,7 @@ class MainTheme {
             contained: {
                 boxShadow: "none",
                 backgroundColor: "none",
-                color: "#fff"
+                color: "#000"
             }
         },
         MuiIconButton: {
@@ -93,15 +102,6 @@ class MainTheme {
         MuiList: {
             root: {
                 marginTop: 20,
-            }
-        },
-        MuiListItem: {
-            root: {
-                '&$selected': {
-                    '&&': {
-                        backgroundColor: this.palette.secondary.main + " !important"
-                    }
-                }
             }
         },
         MuiCardHeader: {
