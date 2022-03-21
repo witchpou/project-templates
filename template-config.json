@@ -3,7 +3,7 @@
   "packagePlaceholder": "xyz",
   "templateFiles": [
     {
-      "fileName": "${domain.name}Entity.java",
+      "fileName": "${domain.name}Entityasfsfd.java",
       "templatePath": "persistence/Entity.ftl",
       "targetPath": "persistence/src/main/java/de/${app.packagePrefix?lower_case}/persistence/entity/",
       "category": "ENTITY"
